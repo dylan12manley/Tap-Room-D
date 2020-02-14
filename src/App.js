@@ -13,13 +13,15 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div id='bodyDiv'>
-      <Header/>
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route path='/kegs' component={AvailableKegs} />
-        <Route component={Error404} />
-      </Switch>
-      <Footer/>
+      <div id='noiseImg'>
+        <Header/>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/kegs' component={AvailableKegs} />
+          <Route component={Error404} />
+        </Switch>
+        <Footer/>
+      </div>
     </div>
   );
 }
