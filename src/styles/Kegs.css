@@ -1,3 +1,9 @@
+.cardClass{
+  height: 40vw;
+  width: 40vw;
+  text-shadow: 1px 1px 2px black, 0 0 0.5em grey, 0 0 0.2em darkgrey;
+  font-family: 'Pacifico', cursive;
+}
 .cardImg{
   height: 40vw;
   min-height: 360px;
