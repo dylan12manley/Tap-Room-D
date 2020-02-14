@@ -1,0 +1,13 @@
+.bioBody {
+  background-image: url("https://img1.cgtrader.com/items/768308/8352c14008/beer-keg-3d-model-obj-mtl-fbx-blend.png");
+  background-size: 50vw;
+  height: 480px;
+  margin-top: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4vw;
+  min-width: 320px;
+  text-shadow: 1px 1px 2px black, 0 0 0.5em grey, 0 0 0.2em darkgrey;
+  color: white;
+  border-radius: 10px;
+}
