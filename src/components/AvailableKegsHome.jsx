@@ -80,3 +80,5 @@ function  AvailableKegsHome(){
     </>
   );
 }
+
+export default AvailableKegsHome

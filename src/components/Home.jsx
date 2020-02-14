@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
-import AvailableKegs from './AvailableKegs'
+import AvailableKegsHome from './AvailableKegsHome'
 import Bio from './Bio'
 
 function Home(){
@@ -10,7 +10,7 @@ function Home(){
     <Container>
       <Row>
         <Col>
-          <AvailableKegs/>
+          <AvailableKegsHome/>
         </Col>
         <Col md={4}>
           <Bio/>
