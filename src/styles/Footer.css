@@ -1,0 +1,18 @@
+#footer {
+  background-image: url(https://miro.medium.com/max/2838/1*ExmKDQHlzPFoIX5dnYHlmA.png);
+  background-size: 30%;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-left: 8px;
+  padding-top: 15px;
+}
+.companyBottom {
+  font-family: 'Pacifico', cursive;
+  padding-right: 17vw;
+}

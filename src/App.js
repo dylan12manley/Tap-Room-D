@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AvailableKegs from './components/AvailableKegs';
 import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/kegs' component={AvailableKegs} />
         <Route component={Error404} />
       </Switch>
+      <Footer/>
     </div>
   );
 }
