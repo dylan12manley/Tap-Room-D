@@ -5,7 +5,8 @@ import blackButte from '../assets/images/black-butte.jpg';
 import double_cherry_lime from '../assets/images/double_cherry_lime.jpeg';
 import dreamland from '../assets/images/Dreamland.jpeg';
 import hazelnutBrownLabel from '../assets/images/Hazelnut-Brown_label.png';
-import kiwanda from '../assets/images/Kiwanda.png';
+import kiwanda from '../assets/images/Kiwanda2.jpg';
+import '../styles/Kegs.css'
 
 const kegsAvailable = [
   {

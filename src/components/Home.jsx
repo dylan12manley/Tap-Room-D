@@ -11,8 +11,6 @@ function Home(){
         <Col>
           <AvailableKegs/>
         </Col>
-        <Col md={8}>
-        </Col>
       </Row>
     </Container>
   </div>
