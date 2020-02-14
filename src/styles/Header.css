@@ -1,8 +1,11 @@
 .companyName {
   font-family: 'Pacifico', cursive;
+  float: left;
 }
 #header {
   display: flex;
+  background-image: url(https://miro.medium.com/max/2838/1*ExmKDQHlzPFoIX5dnYHlmA.png);
+  background-position: center;
   flex-direction: column;
   align-items: center;
   width: 100vw;
@@ -11,4 +14,5 @@
 
 .mr-auto {
   display: flex;
+  text-shadow: .25px .25px black, 0 0 0.5em grey, 0 0 0.2em darkgrey;
 }
