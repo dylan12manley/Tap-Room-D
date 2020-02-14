@@ -74,9 +74,9 @@ function  AvailableKegsHome(){
         </Carousel.Caption>
       </Carousel.Item>
     )};
-
     </Carousel>
     </div>
+    <a href="#kegs">View Available Kegs</a>
     </>
   );
 }

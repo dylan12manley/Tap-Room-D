@@ -3,20 +3,10 @@
 }
 #bodyDiv {
   background-image:
-    linear-gradient(83deg, rgba(113,142,214,1) 8%, rgba(96,187,226,1) 79%, rgba(235,224,152,1) 93%, rgba(96,98,226,1) 100%),
+    linear-gradient(83deg, rgba(113,142,214,.7) 8%, rgba(96,187,226,.7) 79%, rgba(235,224,152,.3) 93%, rgba(96,98,226,0.5) 100%),
     url("http://api.thumbr.it/whitenoise-361x370.png?background=4ea6caff&noise=626262&density=64&opacity=53");
-  min-height: 100vh;
+  min-height: 120vh;
   font-family: Montserrat;
-}
-#noiseImg {
-  height: 100vh;
-  flex-direction: column;
-  justify-content: center;
-  background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=4ea6caff&noise=626262&density=64&opacity=53");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: -1;
 }
 
 .App-logo {
