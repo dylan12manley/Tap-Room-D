@@ -61,6 +61,7 @@ const kegsAvailable = [
 function AvailableKegs (){
   return (
     <div className="kegsAvailable">
+    <h1 style={{fontSize: "40px", paddingLeft: "40px"}}>Available Kegs </h1>
     {kegsAvailable.map((keg, index) =>
       <Card className="text-white cardClass">
         <Card.Img className="cardImg" src={keg.image} alt="an image of a keg" />
