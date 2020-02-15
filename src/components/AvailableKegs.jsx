@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Accordion, Button} from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
 import deadGuy from '../assets/images/deadGuy.jpeg';
 import blackButte from '../assets/images/black-butte.jpg';
 import double_cherry_lime from '../assets/images/double_cherry_lime.jpeg';
@@ -62,24 +62,16 @@ function AvailableKegs (){
   return (
     <div className="kegsAvailable">
     {kegsAvailable.map((keg, index) =>
-      <Accordion>
-  <Card className="text-white cardClass">
-    <Card.Header>
-      <Accordion.Toggle as={Button} variant="link" eventKey="0">
-        <Card.Title>{keg.name} by {keg.brand}</Card.Title>
-      </Accordion.Toggle>
-    </Card.Header>
-    <Accordion.Collapse eventKey="0">
-    <Card.Img className="cardImg" src={keg.image} alt="an image of a keg" />
-    <Card.ImgOverlay>
-      <Card.Text>
-        <p>${keg.price}</p>
-        <p>{keg.abv}% ABV</p>
-      </Card.Text>
-    </Card.ImgOverlay>
-     </Accordion.Collapse>
-    </Card>
-  </Accordion>
+      <Card className="text-white cardClass">
+        <Card.Img className="cardImg" src={keg.image} alt="an image of a keg" />
+        <Card.ImgOverlay>
+          <Card.Title>{keg.name} by {keg.brand}</Card.Title>
+          <Card.Text>
+            <p>${keg.price}</p>
+            <p>{keg.abv}% ABV</p>
+          </Card.Text>
+        </Card.ImgOverlay>
+      </Card>
     )
   }
     </div>
