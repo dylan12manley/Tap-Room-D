@@ -8,7 +8,7 @@ import hazelnutBrownLabel from '../assets/images/Hazelnut-Brown_label.png';
 import kiwanda from '../assets/images/Kiwanda2.jpg';
 import '../styles/Carousel.css'
 
-const kegsAvailable = [
+const beerAvailable = [
   {
     name: "Dead Guy Ale",
     brand: "Rouge",
@@ -64,7 +64,7 @@ function  AllBeers(){
     <>
     <div id='carouselBody'>
     <Carousel>
-    {kegsAvailable.map((keg, index) =>
+    {beerAvailable.map((keg, index) =>
 
       <Carousel.Item>
         <img

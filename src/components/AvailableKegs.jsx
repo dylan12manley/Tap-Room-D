@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from 'react-bootstrap/Card';
+import { Card, Accordion, Button} from 'react-bootstrap';
 import deadGuy from '../assets/images/deadGuy.jpeg';
 import blackButte from '../assets/images/black-butte.jpg';
 import double_cherry_lime from '../assets/images/double_cherry_lime.jpeg';
@@ -12,6 +12,7 @@ const kegsAvailable = [
   {
     name: "Dead Guy Ale",
     brand: "Rouge",
+    style: "Ale",
     price: "5.50",
     abv: "6.8",
     image: deadGuy
@@ -19,6 +20,7 @@ const kegsAvailable = [
   {
     name: "Kiwanda Cream Ale",
     brand: "Pelican",
+    style: "Cream Ale",
     price: "5.50",
     abv: "5.4",
     image: kiwanda
@@ -26,6 +28,7 @@ const kegsAvailable = [
   {
     name: "Hazelnut Brown Nectar",
     brand: "Rouge",
+    style: "Brown Ale",
     price: "6.00",
     abv: "5.6",
     image: hazelnutBrownLabel
@@ -33,6 +36,7 @@ const kegsAvailable = [
   {
     name: "Dreamland",
     brand: "Rouge",
+    style: "Pilsner",
     price: "6.00",
     abv: "4.8",
     image: dreamland
@@ -40,6 +44,7 @@ const kegsAvailable = [
   {
     name: "Double Time Cherry Lime",
     brand: "Rouge",
+    style: "Sour",
     price: "7.50",
     abv: "9.1",
     image: double_cherry_lime
@@ -47,6 +52,7 @@ const kegsAvailable = [
   {
     name: "Blask Butte Porter",
     brand: "Deschutes",
+    style: "Porter",
     price: "5.50",
     abv: "5.2",
     image: blackButte
@@ -56,16 +62,24 @@ function AvailableKegs (){
   return (
     <div className="kegsAvailable">
     {kegsAvailable.map((keg, index) =>
-      <Card className="text-white cardClass">
-        <Card.Img className="cardImg" src={keg.image} alt="an image of a keg" />
-        <Card.ImgOverlay>
-          <Card.Title>{keg.name} by {keg.brand}</Card.Title>
-          <Card.Text>
-            <p>${keg.price}</p>
-            <p>{keg.abv}% ABV</p>
-          </Card.Text>
-        </Card.ImgOverlay>
-      </Card>
+      <Accordion>
+  <Card className="text-white cardClass">
+    <Card.Header>
+      <Accordion.Toggle as={Button} variant="link" eventKey="0">
+        <Card.Title>{keg.name} by {keg.brand}</Card.Title>
+      </Accordion.Toggle>
+    </Card.Header>
+    <Accordion.Collapse eventKey="0">
+    <Card.Img className="cardImg" src={keg.image} alt="an image of a keg" />
+    <Card.ImgOverlay>
+      <Card.Text>
+        <p>${keg.price}</p>
+        <p>{keg.abv}% ABV</p>
+      </Card.Text>
+    </Card.ImgOverlay>
+     </Accordion.Collapse>
+    </Card>
+  </Accordion>
     )
   }
     </div>
