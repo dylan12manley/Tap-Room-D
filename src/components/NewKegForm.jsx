@@ -6,6 +6,9 @@ import { v4 } from 'uuid';
 function NewKegForm(props){
   let _productName = null;
   let _brand = null;
+  let _style = null;
+  let _price = null;
+  let _abv = null;
   let _image = null;
 
   function handleTroubleshootingConfirmation(event){
@@ -13,6 +16,9 @@ function NewKegForm(props){
     props.onNewKegCreation({productName: _productName.value, brand: _brand.value, style: _style.value, price: _price.value, abv: _abv.value, image: _image.value, id: v4()});
     _productName.value = '';
     _brand.value = '';
+    _style.value = '';
+    _price.value = '';
+    _abv.value = '';
     _image.value = '';
   }
   return (
@@ -30,27 +36,22 @@ function NewKegForm(props){
           ref={(input) => {_brand = input;}} />
         <input
           type='text'
-          id='brand'
-          placeholder='brand'
-          ref={(input) => {_brand = input;}} />
+          id='style'
+          placeholder='style (ex Pilsner)'
+          ref={(input) => {_style = input;}} />
         <input
           type='text'
-          id='brand'
-          placeholder='brand'
-          ref={(input) => {_brand = input;}} />
+          id='price'
+          placeholder='price'
+          ref={(input) => {_price = input;}} />
         <input
           type='text'
-          id='brand'
-          placeholder='brand'
-          ref={(input) => {_brand = input;}} />
-        <input
-          type='text'
-          id='brand'
-          placeholder='brand'
-          ref={(input) => {_brand = input;}} />   
+          id='abv'
+          placeholder='abv'
+          ref={(input) => {_abv = input;}} />
         <textarea
           id='image'
-          placeholder='Create your post'
+          placeholder='Insert Image URL'
           ref={(textarea) => {_image = textarea;}} />
           <button type='submit'>Post Keg!</button>
       </form>
