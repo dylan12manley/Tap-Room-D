@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
+import '../styles/Question.css'
+import KegListButton from './KegListButton'
 
 
 function NewKegForm(props){
@@ -22,39 +24,50 @@ function NewKegForm(props){
     _productImage.value = '';
   }
   return (
-    <div>
+    <div className='newKegForm'>
+    <h3>Create New Keg Here</h3>
       <form onSubmit={handleTroubleshootingConfirmation}>
         <input
+          className='formInput'
           type='text'
           id='productName'
           placeholder='Product Name'
           ref={(input) => {_productName = input;}} />
         <input
+          className='formInput'
           type='text'
           id='brand'
           placeholder='Brand'
           ref={(input) => {_brand = input;}} />
+          <br></br>
         <input
+          className='formInput'
           type='text'
           id='style'
           placeholder='Style (ex Pilsner)'
           ref={(input) => {_style = input;}} />
         <input
+          className='formInput'
           type='text'
           id='price'
           placeholder='Price (in USD)'
           ref={(input) => {_price = input;}} />
+          <br></br>
         <input
+          className='formInput'
           type='text'
           id='abv'
           placeholder='abv'
           ref={(input) => {_abv = input;}} />
         <input
+          className='formInput'
           id='productImage'
           placeholder='Insert Image URL'
           ref={(input) => {_productImage = input;}} />
-          <button type='submit'>Post Keg!</button>
+          <br></br>
+          <button className='noBtn' type='submit'>Post Keg!</button>
       </form>
+      <KegListButton/>
     </div>
   );
 }

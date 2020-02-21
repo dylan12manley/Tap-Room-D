@@ -1,0 +1,18 @@
+.question{
+  text-align: center;
+  padding-top: 2vh;
+}
+.noBtn{
+  margin-top: 2vh;
+  border: 0.5rem double rgb(255, 255, 255, 0.8);
+  background-image:
+  linear-gradient(181deg, rgba(218,214,214,.5) 0%, rgba(146,191,177,.5) 2%, rgba(180,127,98,.5) 53%, rgba(104,71,86,.5) 79%, rgba(61,49,74,.5) 98%, rgba(218,214,214,.5) 100%),
+    url("/./components/images/noizz.png");
+}
+.newKegForm{
+  padding: 2vh;
+  text-align: center;
+}
+.formInput{
+  padding: .8vw;
+}

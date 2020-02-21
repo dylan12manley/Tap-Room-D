@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/Question.css'
 
 function ConfirmationQuestion(props){
   return (
-    <div>
-      <p>Do you have a new keg to add to our list?</p>
-      <button onClick={props.onTroubleshootingConfirmation}>Yes</button>
+    <div className='question'>
+      <h3>Are you trying to add a hoppy beer?</h3>
+      <button className='noBtn' onClick={props.onTroubleshootingConfirmation}>No</button>
     </div>
   );
 }
