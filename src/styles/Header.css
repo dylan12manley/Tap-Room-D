@@ -1,8 +1,7 @@
 .companyName {
   font-family: 'Pacifico', cursive;
-  margin-right: 5vw;
-
-
+  margin-right: 25vw;
+  color: #3D314A;
 }
 #header {
   display: flex;
@@ -10,13 +9,14 @@
   linear-gradient(181deg, rgba(218,214,214,.5) 0%, rgba(146,191,177,.5) 2%, rgba(180,127,98,.5) 53%, rgba(104,71,86,.5) 79%, rgba(61,49,74,.5) 98%, rgba(218,214,214,.5) 100%),
     url("/./components/images/noizz.png");
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   width: 100vw;
   justify-content: center;
 }
 
-.mr-auto {
-  display: flex;
+.navLink {
   font-family: Montserrat;
   text-shadow: .25px .25px black, 0 0 0.5em grey, 0 0 0.2em darkgrey;
+  color: #3D314A;
+  margin-right: 10vw;
 }

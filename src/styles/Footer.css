@@ -14,6 +14,10 @@
 }
 .companyBottom {
   font-family: 'Pacifico', cursive;
-  padding-right: 17vw;
+  padding-right: 7vw;
   padding-top: 15px;
+}
+.navP {
+  color: #684756;
+  padding-right: 7vw;
 }

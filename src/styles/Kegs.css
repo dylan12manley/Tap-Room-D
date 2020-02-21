@@ -8,6 +8,10 @@
   padding-top: 8px;
 }
 .cardHeader{
+  background-image:
+  linear-gradient(181deg, rgba(218,214,214,.5) 0%, rgba(146,191,177,.5) 2%, rgba(180,127,98,.5) 53%, rgba(104,71,86,.5) 79%, rgba(61,49,74,.5) 98%, rgba(218,214,214,.5) 100%),
+    url("/./components/images/noizz.png");
+  background-size: cover;
  }
 .cardImg{
   height: 40vw;
