@@ -10,20 +10,23 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Footer from './components/Footer'
 
-function App() {
-  return (
-    <div id='bodyDiv'>
-      <div id='noiseImg'>
-        <Header/>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/kegs' component={AvailableKegs} />
-          <Route component={Error404} />
-        </Switch>
-        <Footer/>
+class NewTicketControl extends React.Component {
+
+  render(){
+    return (
+      <div id='bodyDiv'>
+        <div id='noiseImg'>
+          <Header/>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/kegs' component={AvailableKegs} />
+            <Route component={Error404} />
+          </Switch>
+          <Footer/>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
