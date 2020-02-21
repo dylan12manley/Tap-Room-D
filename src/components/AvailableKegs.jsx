@@ -26,7 +26,7 @@ const kegsAvailable = [
     image: kiwanda
   },
   {
-    name: "Hazelnut Brown Nectar",
+    name: "Hazelnut Brown",
     brand: "Rouge",
     style: "Brown Ale",
     price: "6.00",
@@ -42,8 +42,8 @@ const kegsAvailable = [
     image: dreamland
   },
   {
-    name: "Double Time Cherry Lime",
-    brand: "Rouge",
+    name: "Evil Lime Weinstein",
+    brand: "DLN Brewing",
     style: "Sour",
     price: "7.50",
     abv: "9.1",
@@ -61,15 +61,16 @@ const kegsAvailable = [
 function AvailableKegs (){
   return (
     <div className="kegsAvailableDiv">
-    <h1 style={{fontSize: "40px", paddingLeft: "7.5%"}}>Available Kegs </h1>
+    <h1 style={{fontSize: "40px", fontWeight:"700", paddingLeft: "7.5%"}}>Available Kegs </h1>
     {kegsAvailable.map((keg, index) =>
       <Card className="text-white cardClass">
-      <h5 className='cardTitle'>{keg.name} </h5>
-      <h6 className='cardTitleB'>{keg.brand} from Ashland </h6>
+      <div className='cardHeader'>
+        <h5 className='cardTitle'>{keg.name} <h6 className='cardTitleB'>{keg.brand} from Ashland </h6></h5>
+      </div>
         <Card.Img className="cardImg" src={keg.image} alt="an image of a keg" />
         <Card.ImgOverlay>
           <Card.Text>
-            <div >
+            <div className="kegSubtitle" >
             <p>${keg.price}</p>
             <p>{keg.abv}% ABV</p>
             </div>
