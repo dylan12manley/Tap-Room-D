@@ -10,8 +10,19 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Footer from './components/Footer'
 
-class NewTicketControl extends React.Component {
-
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      masterKegList: []
+    };
+    this.handleAddingNewKegsToList = this.handleAddingNewKegsToList.bind(this);
+  }
+  handleAddingNewKegsToList(newKeg){
+    let newMasterKegList = this.state.masterKegList.slice();
+    newMasterKegList.push(newKeg);
+    this.setState({masterKegList: newMasterKegList});
+  }
   render(){
     return (
       <div id='bodyDiv'>
