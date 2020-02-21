@@ -27,22 +27,22 @@ function NewKegForm(props){
         <input
           type='text'
           id='productName'
-          placeholder='Keg Author'
+          placeholder='Product Name'
           ref={(input) => {_productName = input;}} />
         <input
           type='text'
           id='brand'
-          placeholder='brand'
+          placeholder='Brand'
           ref={(input) => {_brand = input;}} />
         <input
           type='text'
           id='style'
-          placeholder='style (ex Pilsner)'
+          placeholder='Style (ex Pilsner)'
           ref={(input) => {_style = input;}} />
         <input
           type='text'
           id='price'
-          placeholder='price'
+          placeholder='Price (in USD)'
           ref={(input) => {_price = input;}} />
         <input
           type='text'

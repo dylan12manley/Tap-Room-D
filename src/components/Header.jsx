@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown }from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import "../styles/Header.css"
 
 
@@ -8,10 +9,10 @@ function Header(){
     <>
     <div id="header">
   <Navbar>
-  <Navbar.Brand className="companyName" href="/">Tap Room D</Navbar.Brand>
+  <Link to='/' className="companyName" >Tap Room D</Link>
     <Nav className="mr-auto">
-      <Nav.Link href="/">Home</Nav.Link>
-      <Nav.Link href="#kegs">Available Kegs</Nav.Link>
+      <Link className='navLink' to="/">Home</Link>
+      <Link className='navLink' to="kegs">Available Kegs</Link>
     </Nav>
   </Navbar>
   </div>
