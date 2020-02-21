@@ -10,7 +10,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import NewKegControl from './components/NewKegControl';
 import Footer from './components/Footer';
-
+import NewKegsList from './components/NewKegsList';
 
 class App extends React.Component {
   constructor(props){
@@ -24,6 +24,7 @@ class App extends React.Component {
     console.log(newKeg);
     let newMasterKegList = this.state.masterKegList.slice();
     newMasterKegList.push(newKeg);
+    console.log(newMasterKegList);
     this.setState({masterKegList: newMasterKegList});
   }
   render(){
@@ -35,6 +36,7 @@ class App extends React.Component {
             <Route path='/newkeg' render={()=><NewKegControl onNewKegCreation={this.handleAddingNewKegToList} />} />
             <Route exact path='/' component={Home} />
             <Route path='/kegs' component={AvailableKegs} />
+            <Route path='/kegsadded' render={()=><NewKegsList nKegList={this.state.masterKegList} />} />
             <Route component={Error404} />
           </Switch>
           <Footer/>
