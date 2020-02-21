@@ -12,9 +12,10 @@
   width: 40vw;
   min-width: 360px;
 }
-.kegsAvailable{
+.kegsAvailableDiv{
   margin-left: 26vw;
   margin-bottom: 50px;
+  padding-bottom: 85px;
 }
 a{
   color: white;

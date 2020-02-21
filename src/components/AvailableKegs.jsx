@@ -60,8 +60,8 @@ const kegsAvailable = [
 ]
 function AvailableKegs (){
   return (
-    <div className="kegsAvailable">
-    <h1 style={{fontSize: "40px", paddingLeft: "40px"}}>Available Kegs </h1>
+    <div className="kegsAvailableDiv">
+    <h1 style={{fontSize: "40px", paddingLeft: "7.5%"}}>Available Kegs </h1>
     {kegsAvailable.map((keg, index) =>
       <Card className="text-white cardClass">
       <h5 className='cardTitle'>{keg.name} </h5>

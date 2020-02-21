@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 
 function KegListButton(){
   const styledKButton = {
-    padding: '12px'
+    padding: '12px',
+    marginLeft: '30%'
   }
   return (
-    <div style={styledKButton}>
-      <h3><Link to="/kegs">Check Out Kegs</Link></h3>
+    <div >
+      <h3 style={styledKButton}><Link to="/kegs">Check Out Currently Available Keg List</Link></h3>
     </div>
   );
 }
