@@ -12,8 +12,7 @@ function NewKegsList (props){
 {props.nKegList.map((keg) =>
   <Card className="text-white cardClass">
   <div className='cardHeader'>
-    <h4 className='cardTitle'>{keg.productName}</h4>
-    <h6 className='cardTitleB'>Made by {keg.brand} </h6>
+    <h4 className='cardTitle'>{keg.productName} className='cardTitleB'>Made by {keg.brand} </h4>
   </div>
     <Card.Img className="cardImg" src={keg.productImage} alt="an image of a keg" />
     <Card.ImgOverlay>

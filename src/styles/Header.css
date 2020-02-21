@@ -1,6 +1,8 @@
 .companyName {
   font-family: 'Pacifico', cursive;
-  padding-right: 40vw;
+  margin-right: 5vw;
+
+
 }
 #header {
   display: flex;
