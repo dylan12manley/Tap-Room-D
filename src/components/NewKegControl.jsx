@@ -31,6 +31,6 @@ handleTroubleshootingConfirmation(){
   }
 }
 NewKegControl.propTypes = {
-  onNewTicketCreation: PropTypes.func
+  onNewKegCreation: PropTypes.func
 };
 export default NewKegControl;
