@@ -29,6 +29,7 @@ class App extends React.Component {
         <div id='noiseImg'>
           <Header/>
           <Switch>
+            <Route path='/newkeg' render={()=><NewKegControl onNewKegCreation={this.handleAddingNewKegToList} />} />
             <Route exact path='/' component={Home} />
             <Route path='/kegs' component={AvailableKegs} />
             <Route component={Error404} />
