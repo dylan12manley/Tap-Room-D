@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Col, Row } from 'react-bootstrap';
-// import LikeControl from './LikeControl'
 
-function Post(props){
+
+function Keg(props){
   return(
     <div>
       <Row>
         <Col md="1" sm="1">
-          <LikeControl />
         </Col>
         <Col md="11" sm="11">
           <h2>{props.productName} </h2>
@@ -16,7 +15,7 @@ function Post(props){
           <h4> {props.style}</h4>
           <h4> {props.price}</h4>
           <h4> {props.abv}</h4>
-          <image src('{props.productImage}')></image>
+          <image src={props.productImage}></image>
           <hr/>
         </Col>
       </Row>
@@ -24,13 +23,13 @@ function Post(props){
   );
 }
 
-Post.propTypes ={
+Keg.propTypes ={
   productName: PropTypes.string.isRequired,
   brand: PropTypes.string.isRequired,
   style: PropTypes.string,
   price: PropTypes.string,
   abv: PropTypes.string,
-  productImage: Props.string
+  productImage: PropTypes.string
 };
 
-export default Post;
+export default Keg;
