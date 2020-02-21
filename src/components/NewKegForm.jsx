@@ -9,17 +9,17 @@ function NewKegForm(props){
   let _style = null;
   let _price = null;
   let _abv = null;
-  let _image = null;
+  let _productImage = null;
 
   function handleTroubleshootingConfirmation(event){
     event.preventDefault();
-    props.onNewKegCreation({productName: _productName.value, brand: _brand.value, style: _style.value, price: _price.value, abv: _abv.value, image: _image.value, id: v4()});
+    props.onNewKegCreation({productName: _productName.value, brand: _brand.value, style: _style.value, price: _price.value, abv: _abv.value, productImage: _productImage.value, id: v4()});
     _productName.value = '';
     _brand.value = '';
     _style.value = '';
     _price.value = '';
     _abv.value = '';
-    _image.value = '';
+    _productImage.value = '';
   }
   return (
     <div>
@@ -49,10 +49,10 @@ function NewKegForm(props){
           id='abv'
           placeholder='abv'
           ref={(input) => {_abv = input;}} />
-        <textarea
-          id='image'
+        <input
+          id='productImage'
           placeholder='Insert Image URL'
-          ref={(textarea) => {_image = textarea;}} />
+          ref={(input) => {_productImage = input;}} />
           <button type='submit'>Post Keg!</button>
       </form>
     </div>
