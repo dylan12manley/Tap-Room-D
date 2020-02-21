@@ -64,12 +64,15 @@ function AvailableKegs (){
     <h1 style={{fontSize: "40px", paddingLeft: "40px"}}>Available Kegs </h1>
     {kegsAvailable.map((keg, index) =>
       <Card className="text-white cardClass">
+      <h5 className='cardTitle'>{keg.name} </h5>
+      <h6 className='cardTitleB'>{keg.brand} from Ashland </h6>
         <Card.Img className="cardImg" src={keg.image} alt="an image of a keg" />
         <Card.ImgOverlay>
-          <Card.Title>{keg.name} by {keg.brand}</Card.Title>
           <Card.Text>
+            <div >
             <p>${keg.price}</p>
             <p>{keg.abv}% ABV</p>
+            </div>
           </Card.Text>
         </Card.ImgOverlay>
       </Card>

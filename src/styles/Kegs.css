@@ -20,3 +20,11 @@ a{
   color: white;
   text-align: right;
 }
+.cardTitle{
+  margin-bottom: 16px;
+  width:  360px;
+  font-size: 40px
+}
+.cardTextOverlay{
+  margin-top: 50px;
+}
