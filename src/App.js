@@ -8,7 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AvailableKegs from './components/AvailableKegs';
 import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
-import Footer from './components/Footer'
+import NewKegControl from './components/NewKegControl';
+import Footer from './components/Footer';
+
 
 class App extends React.Component {
   constructor(props){

@@ -3,6 +3,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 import AllBeers from './AllBeers'
 import Bio from './Bio'
 import KegListButton from './KegListButton'
+import NewKegButton from './NewKegButton'
 
 function Home(){
   // const styledKegListButton = {
@@ -21,6 +22,7 @@ function Home(){
           <Bio/>
         </Col>
       </Row>
+      <NewKegButton className='KLBTN'/>
     </Container>
   </div>
   );
