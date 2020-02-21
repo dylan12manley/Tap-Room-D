@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
+import NewKegButton from './NewKegButton';
 import deadGuy from '../assets/images/deadGuy.jpeg';
 import blackButte from '../assets/images/black-butte.jpg';
 import double_cherry_lime from '../assets/images/double_cherry_lime.jpeg';
@@ -61,6 +62,7 @@ const kegsAvailable = [
 function AvailableKegs (){
   return (
     <div className="kegsAvailableDiv">
+    <NewKegButton className='KLBTN'/>
     <h1 style={{fontSize: "40px", fontWeight:"700", paddingLeft: "7.5%"}}>Available Kegs </h1>
     {kegsAvailable.map((keg, index) =>
       <Card className="text-white cardClass">

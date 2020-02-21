@@ -2,6 +2,7 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 import Keg from './Keg';
 import PropTypes from 'prop-types'
+import KegListButton from './KegListButton'
 import '../styles/Kegs.css'
 
 function NewKegsList (props){
@@ -12,7 +13,7 @@ function NewKegsList (props){
 {props.nKegList.map((keg) =>
   <Card className="text-white cardClass">
   <div className='cardHeader'>
-    <h5 className='cardTitle'>{keg.name} <h6 className='cardTitleB'>{keg.brand} from Ashland </h6></h5>
+    <h5 className='cardTitle'>{keg.name} From <h6 className='cardTitleB'>{keg.brand}</h6></h5>
   </div>
     <Card.Img className="cardImg" src={keg.productImage} alt="an image of a keg" />
     <Card.ImgOverlay>
@@ -26,6 +27,8 @@ function NewKegsList (props){
   </Card>
 )
 }
+
+<KegListButton className='KLBTN'/>
 </div>
 );
 }

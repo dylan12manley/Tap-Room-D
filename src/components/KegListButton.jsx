@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function KegListButton(){
   const styledKButton = {
     padding: '12px',
-    marginLeft: '30%'
+    margin: '0, auto'
   }
   return (
     <div >
