@@ -7,12 +7,12 @@ import '../styles/Kegs.css'
 function NewKegsList (props){
   console.log(props.masterKegList);
   return (
-    <div className="newKegsList">
+    <div className="kegsAvailableDiv">
     <h1 style={{fontSize: "40px", fontWeight:"700", paddingLeft: "7.5%"}}>Available Kegs </h1>
 {props.nKegList.map((keg) =>
   <Card className="text-white cardClass">
   <div className='cardHeader'>
-    <h4 className='cardTitle'>{keg.productName} className='cardTitleB'>Made by {keg.brand} </h4>
+    <h5 className='cardTitle'>{keg.name} <h6 className='cardTitleB'>{keg.brand} from Ashland </h6></h5>
   </div>
     <Card.Img className="cardImg" src={keg.productImage} alt="an image of a keg" />
     <Card.ImgOverlay>
