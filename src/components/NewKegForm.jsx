@@ -4,34 +4,54 @@ import { v4 } from 'uuid';
 
 
 function NewKegForm(props){
-  let _author = null;
-  let _title = null;
-  let _postBody = null;
+  let _productName = null;
+  let _brand = null;
+  let _image = null;
 
   function handleTroubleshootingConfirmation(event){
     event.preventDefault();
-    props.onNewKegCreation({author: _author.value, title: _title.value, postBody: _postBody.value, id: v4()});
-    _author.value = '';
-    _title.value = '';
-    _postBody.value = '';
+    props.onNewKegCreation({productName: _productName.value, brand: _brand.value, style: _style.value, price: _price.value, abv: _abv.value, image: _image.value, id: v4()});
+    _productName.value = '';
+    _brand.value = '';
+    _image.value = '';
   }
   return (
     <div>
       <form onSubmit={handleTroubleshootingConfirmation}>
         <input
           type='text'
-          id='author'
+          id='productName'
           placeholder='Keg Author'
-          ref={(input) => {_author = input;}} />
+          ref={(input) => {_productName = input;}} />
         <input
           type='text'
-          id='title'
-          placeholder='title'
-          ref={(input) => {_title = input;}} />
+          id='brand'
+          placeholder='brand'
+          ref={(input) => {_brand = input;}} />
+        <input
+          type='text'
+          id='brand'
+          placeholder='brand'
+          ref={(input) => {_brand = input;}} />
+        <input
+          type='text'
+          id='brand'
+          placeholder='brand'
+          ref={(input) => {_brand = input;}} />
+        <input
+          type='text'
+          id='brand'
+          placeholder='brand'
+          ref={(input) => {_brand = input;}} />
+        <input
+          type='text'
+          id='brand'
+          placeholder='brand'
+          ref={(input) => {_brand = input;}} />   
         <textarea
-          id='postBody'
+          id='image'
           placeholder='Create your post'
-          ref={(textarea) => {_postBody = textarea;}} />
+          ref={(textarea) => {_image = textarea;}} />
           <button type='submit'>Post Keg!</button>
       </form>
     </div>
