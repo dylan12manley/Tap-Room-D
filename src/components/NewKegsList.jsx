@@ -7,10 +7,6 @@ import NewKegButton from './NewKegButton'
 import '../styles/Kegs.css'
 
 function NewKegsList (props){
-  const styledKButton = {
-    padding: '12px',
-    margin: '0, auto'
-  }
   return (
     <div className="kegsAvailableDiv">
     <NewKegButton/>
@@ -32,7 +28,7 @@ function NewKegsList (props){
   </Card>
 )
 }
-
+    <KegListButton/>
 </div>
 );
 }

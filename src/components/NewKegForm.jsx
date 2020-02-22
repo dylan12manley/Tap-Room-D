@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 import '../styles/Question.css'
-import KegListButton from './KegListButton'
+import NewArrivalButton from './NewArrivalButton'
 
 
 function NewKegForm(props){
@@ -67,7 +67,7 @@ function NewKegForm(props){
           <br></br>
           <button className='noBtn' type='submit'>Post Keg!</button>
       </form>
-      <KegListButton/>
+      <NewArrivalButton/>
     </div>
   );
 }

@@ -8,7 +8,7 @@ function KegListButton(){
   }
   return (
     <div >
-      <h3 style={styledKButton}><Link to="/kegs">Check Out Currently Available Keg List</Link></h3>
+      <h3 style={styledKButton}><Link to="/kegs">Always Available Kegs</Link></h3>
     </div>
   );
 }
