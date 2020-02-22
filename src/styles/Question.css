@@ -4,6 +4,15 @@
 }
 .noBtn{
   margin-top: 2vh;
+  margin-left: 10vh;
+  border: 0.5rem double rgb(255, 255, 255, 0.8);
+  background-image:
+  linear-gradient(181deg, rgba(218,214,214,.5) 0%, rgba(146,191,177,.5) 2%, rgba(180,127,98,.5) 53%, rgba(104,71,86,.5) 79%, rgba(61,49,74,.5) 98%, rgba(218,214,214,.5) 100%),
+    url("/./components/images/noizz.png");
+}
+.noBtn2{
+  margin-top: 2vh;
+  margin-left: 13vh; 
   border: 0.5rem double rgb(255, 255, 255, 0.8);
   background-image:
   linear-gradient(181deg, rgba(218,214,214,.5) 0%, rgba(146,191,177,.5) 2%, rgba(180,127,98,.5) 53%, rgba(104,71,86,.5) 79%, rgba(61,49,74,.5) 98%, rgba(218,214,214,.5) 100%),

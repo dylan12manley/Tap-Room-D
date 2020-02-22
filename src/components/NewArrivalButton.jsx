@@ -8,7 +8,12 @@ function NewArrivalButton(){
   }
   return (
     <div >
-      <h3 style={styledKButton}><Link to="/kegsadded">Check Out Our New Arrivals</Link></h3>
+    <Link to="/kegsadded">
+      <button type="button"
+      className='noBtn'>
+           New Arrivals
+      </button>
+    </Link>
     </div>
   );
 }

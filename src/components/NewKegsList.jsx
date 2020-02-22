@@ -9,7 +9,7 @@ import '../styles/Kegs.css'
 function NewKegsList (props){
   return (
     <div className="kegsAvailableDiv">
-    <NewKegButton/>
+
     <h1 style={{fontSize: "40px", fontWeight:"700", paddingLeft: "7.5%"}}>New Arrivals </h1>
 {props.nKegList.map((keg) =>
   <Card className="text-white cardClass">
@@ -28,6 +28,7 @@ function NewKegsList (props){
   </Card>
 )
 }
+    <NewKegButton/>
     <KegListButton/>
 </div>
 );

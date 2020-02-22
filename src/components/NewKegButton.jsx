@@ -8,7 +8,12 @@ function NewKegButton(){
   }
   return (
     <div >
-      <h3 style={styledKButton}><Link to="/newkeg">Add A New Keg</Link></h3>
+      <Link to="/newkeg">
+        <button type="button"
+        className='noBtn2'>
+             Add A New Keg
+        </button>
+      </Link>
     </div>
   );
 }
