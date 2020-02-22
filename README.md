@@ -1,6 +1,6 @@
 # Tap Room D
 
-_This is an app for a tap room, displaying the kegs available there and a brief bio. Made using React, Javascript and Css._
+_This is an app for a tap room, displaying the kegs available there and a brief bio. Users can add new kegs to the "New Kegs List." Made using React, Javascript and Css._
 
 By Dylan Manley
 
@@ -14,7 +14,7 @@ By Dylan Manley
 * Browser will open with project running.
 
 ### Diagram of Component Tree
-![diagram](UntitledDiagram.png)
+![diagram](sketch.jpg)
 
 ## Support and contact details
 _Any questions, comments or contributions please contact Dylan Manley (dylan.manley@gmail.com)_
