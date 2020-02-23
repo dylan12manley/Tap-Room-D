@@ -19,7 +19,8 @@ By Dylan Manley
 ## Support and contact details
 _Any questions, comments or contributions please contact Dylan Manley (dylan.manley@gmail.com)_
 
-## Technologies Used ## #### React, Javascript, Node, CSS, and HTML
+## Technologies Used 
+#### React, Javascript, Node, CSS, and HTML
 
 
 ## License
