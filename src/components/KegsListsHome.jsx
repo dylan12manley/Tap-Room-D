@@ -1,33 +1,16 @@
 import React from 'react'
-
+import NewKegsList from './NewKegsList';
+import AvailableKegs from './AvailableKegs';
+import {Col, Row} from 'react-bootstrap';
+import PropTypes from 'prop-types';
 
 function KegsListsHome (props){
   return (
-    <div className="kegsAvailableDiv">
-
-    <h1 style={{fontSize: "40px", fontWeight:"700", paddingLeft: "7.5%"}}>New Arrivals </h1>
-{props.nKegList.map((keg) =>
-  <Card className="text-white cardClass">
-  <div className='cardHeader'>
-    <h5 className='cardTitle'>{keg.name} <h6 className='cardTitleB'> From {keg.brand}</h6></h5>
-  </div>
-    <Card.Img className="cardImg" src={keg.productImage} alt="an image of a keg" />
-    <Card.ImgOverlay>
-      <Card.Text>
-        <div className="kegSubtitle" >
-        <p>${keg.price}</p>
-        <p>{keg.abv}% ABV</p>
-        </div>
-      </Card.Text>
-    </Card.ImgOverlay>
-  </Card>
-)
-}
-    <NewKegButton/>
-    <KegListButton/>
-</div>
-);
-}
+    <Row>
+      <Col><AvailableKegs/></Col>
+      <Col><NewKegsList/></Col>
+    </Row>
+)}
 KegsListsHome.propTypes ={
   masterKegList: PropTypes.array
 };

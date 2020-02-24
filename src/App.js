@@ -11,6 +11,7 @@ import Home from './components/Home';
 import NewKegControl from './components/NewKegControl';
 import Footer from './components/Footer';
 import NewKegsList from './components/NewKegsList';
+import KegsListsHome from './components/KegsListsHome';
 
 class App extends React.Component {
   constructor(props){
@@ -36,6 +37,7 @@ class App extends React.Component {
             <Route path='/newkeg' render={()=><NewKegControl onNewKegCreation={this.handleAddingNewKegToList} />} />
             <Route exact path='/' component={Home} />
             <Route path='/kegs' component={AvailableKegs} />
+            <Route path='/beerLists' render={()=><KegsListsHome nKegList={this.state.masterKegList} />} />
             <Route path='/kegsadded' render={()=><NewKegsList nKegList={this.state.masterKegList} />} />
             <Route component={Error404} />
           </Switch>

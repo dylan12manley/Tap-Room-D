@@ -81,9 +81,8 @@ function AvailableKegs (){
       </Card>
     )
   }
-    </div>
-    <NewKegButton/>
-    </div>
+  </div>
+  </div>
   );
 }
 
