@@ -1,6 +1,10 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
-import AllBeers from './AllBeers'
+import Slogan from './Slogan'
+import Testimonial from './Testimonial'
+import FeaturedItems from './FeaturedItems'
+import EventBoard from './EventBoard'
+// import Awards from '/.Awards'
 import Bio from './Bio'
 import NewKegButton from './NewKegButton'
 
@@ -12,14 +16,20 @@ function Home(){
 
   <div id='home'>
     <Container>
+      <Slogan/>
       <Row>
-        <Col>
-          <AllBeers/>
+        <Col md={3}>
+          <Bio/>
+          <Testimonial/>
         </Col>
         <Col md={5}>
-          <Bio/>
+          <FeaturedItems/>
+        </Col>
+        <Col md={4}>
+          <EventBoard/>
         </Col>
       </Row>
+
       <NewKegButton className='KLBTN'/>
     </Container>
   </div>

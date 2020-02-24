@@ -59,7 +59,7 @@ const beerAvailable = [
   }
 ]
 
-function  AllBeers(){
+function  FeaturedItems(){
   return (
     <>
     <div id='carouselBody'>
@@ -86,4 +86,4 @@ function  AllBeers(){
   );
 }
 
-export default AllBeers
+export default FeaturedItems
